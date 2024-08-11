@@ -5,9 +5,11 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "yipeeeeeeee yo tambien te amo y espero q siempre tengas en cuenta que me haces muy feliz :) acordate que todo en esta vida tiene solucion y la mejor forma de enfrentarlos es con ganas y actitud, te amo ";
-  gif.src =
-    "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
+  question.innerHTML =
+    "yipeeeeeeee yo tambien te amo y espero q siempre tengas en cuenta que me haces muy feliz :) acordate que todo en esta vida tiene solucion y la mejor forma de enfrentarlos es con ganas y actitud, te amo ";
+  gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
+  question.className.add("question")
+  gif.classList.add("small-gif");
 });
 
 noBtn.addEventListener("mouseover", () => {
